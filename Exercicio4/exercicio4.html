@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ficha Cadastral</title>
+    <style type="text/css">
+    *{
+      font:13px Arial;
+			margin: 0;
+			padding: 0;
+    }
+    .cabecalho{
+      font-size: 30px;
+      color: darkgrey;
+      text-align: center;
+      margin: 20px
+    }
+    .quadrado{
+      height: 180px;
+      width: 30%;
+      margin: 0px auto;
+      padding: 10px;
+
+    }
+    .rg{
+      float: left;
+      padding:4px;
+      : darkgrey;
+      border-color: #333;
+      column-count: #000;
+    }
+    .rg2{
+      float: left;
+      height:  30px;
+      padding: 4px;
+    }
+    input{
+      background-color: #333;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 class="cabecalho">Ficha Cadastral</h1>
+    <form method="post" action="cadastrar.html">
+    <fieldset class="quadrado">
+      <legend>Dados Pessoais</legend>
+      <div class="rg">
+
+
+      <label for="nome">Nome:<br />
+          <input type="text" name="nome" size="66"
+            placeholder=""required/>
+          </label>
+            </div>
+          <div class="rg">
+          <label for="RG">RG:<br />
+          <input type="text" name="RG" size="30"
+          placeholder=""required/>
+        </div>
+          <div class="rg">
+          <label for="CPF">CPF:<br />
+          <input type="text" name="CPF" size="30"
+          placeholder=""required/>
+        </label>
+        </label>
+      </div>
+      <div class="rg">
+        <label for="endereco">Endereço:<br />
+        <input type="text" name="endereco" size="66">
+        </label>
+      </div>
+      <div class="rg2">
+        <label for="Genero">Gênero:<br />
+          <select name="Genero" >
+          <option value="m" >Masculino</option>
+          <option value="f" >Feminino</option>
+        </select>
+      </label>
+    </div>
+    <div class="rg2">
+      <label for="Data de nascimento">Data de Nascimento:<br />
+        <input type="date" name="Data de nasciento" size="30"
+        placeholder=""required>
+      </label>
+    </div>
+    <div>
+      Situação Civil:<br />
+      <label>
+        <input type="radio" name="hotel" value="s"/>
+        Solteiro(a)
+      </label>
+      <label>
+        <input type="radio" name="hotel" value="c"/>
+        Casado(a)
+      </label>
+      <label>
+        <input type="radio" name="hotel" value="v"/>
+        Viuvo(a)
+      </label>
+    </div>
+    <button id="btnReservar">Reservar Agora</button>
+  </fieldset>
+  </body>
+</html>
